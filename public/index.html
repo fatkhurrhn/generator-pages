@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern PNG to PDF Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">PNG to PDF Converter</h1>
+        <p class="text-gray-600 mb-6">Convert your PNG images to PDF effortlessly.</p>
+        
+        <!-- Dropzone -->
+        <div id="dropzone" 
+            class="border-2 border-dashed border-gray-300 rounded-lg py-16 px-4 bg-gray-100 hover:bg-gray-200 transition">
+            <p class="text-gray-500">Drag and drop PNG files here, or click to upload</p>
+            <input id="pngFile" type="file" accept=".png" multiple class="hidden">
+        </div>
+
+        <!-- Convert Button -->
+        <button id="convertButton" 
+            class="mt-6 bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700 transition">
+            Convert to PDF
+        </button>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="hidden mt-4 text-indigo-600">
+            <svg class="animate-spin h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0116 0H4z"></path>
+            </svg>
+            <p class="mt-2">Processing...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
