@@ -1,3 +1,4 @@
+
 # PNG to PDF Converter 🌟
 
 A modern web application that allows users to effortlessly convert **PNG files to PDF**. Built with an intuitive interface using **Tailwind CSS** and features **drag-and-drop** functionality for a seamless experience.
@@ -20,3 +21,39 @@ A modern web application that allows users to effortlessly convert **PNG files t
 - Express.js
 - pdf-lib
 
+## 🚀 Getting Started
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/username/repo-name.git
+   cd repo-name
+   ```
+2. Install dependencies:  
+   ```bash
+   npm install
+   ```
+3. Start the server:  
+   ```bash
+   node server.js
+   ```
+4. Open the application in your browser:  
+   [http://localhost:3000](http://localhost:3000)
+
+## 📂 Project Structure
+```
+/project
+|-- /public       # Frontend files (HTML, CSS, JS)
+|-- /uploads      # Temporary storage for uploaded files
+|-- server.js     # Backend logic for PNG to PDF conversion
+```
+
+## 🖼️ Demo
+![App Screenshot](https://via.placeholder.com/800x400?text=Screenshot+PNG+to+PDF+Converter)
+
+## 💡 Future Enhancements
+- Add file compression for smaller PDFs.
+- Support additional image formats (JPEG, SVG, etc.).
+- Provide layout and size customization options for PDFs.
+
+---
+
+Feel free to contribute or suggest new features! 🚀
